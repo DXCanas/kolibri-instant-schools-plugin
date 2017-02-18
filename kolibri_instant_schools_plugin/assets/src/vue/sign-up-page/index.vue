@@ -35,15 +35,15 @@
         type="text" />
 
       <ui-textbox
-        :placeholder="$tr('enterUsername')"
-        :label="$tr('username')"
-        :aria-label="$tr('username')"
         :invalid="usernameError"
+        :placeholder="$tr('enterPhoneNumber')"
+        :label="$tr('phoneNumber')"
+        :aria-label="$tr('phoneNumber')"
         v-model="username"
-        autocomplete="username"
+        autocomplete="tel"
         required
         id="username"
-        type="text" />
+        type="tel" />
 
       <ui-textbox
         id="password"
@@ -92,8 +92,8 @@
       createAccount: 'Create an Account',
       name: 'Name',
       enterName: 'Enter Name',
-      username: 'Username',
-      enterUsername: 'Enter Username',
+      phoneNumber: 'Phone Number',
+      enterPhoneNumber: 'Enter Phone Number',
       password: 'Password',
       enterPassword: 'Enter Password',
       confirmPassword: 'Confirm Password',
